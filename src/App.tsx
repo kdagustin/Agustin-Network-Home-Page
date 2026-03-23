@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Terms from './pages/Terms';
+import DevicePlan from './pages/DevicePlan';
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="device-plan" element={<DevicePlan />} />
           <Route path="terms" element={<Terms />} />
         </Route>
       </Routes>

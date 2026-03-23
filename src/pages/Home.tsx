@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Wifi, CheckCircle2, ArrowRight, Activity, X, Wrench, Zap, Users, ShieldCheck, PhoneCall, MapPin, MessageSquare } from 'lucide-react';
+import { Wifi, CheckCircle2, ArrowRight, Activity, X, Wrench, Zap, Users, ShieldCheck, PhoneCall, MapPin, MessageSquare, Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -126,6 +126,63 @@ export default function Home() {
             <p className="text-slate-600 text-lg">
               The Provider reserves the right to manage bandwidth allocation to maintain network stability.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Device Plan Highlight Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-900 to-slate-900 text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-full h-full overflow-hidden z-0 opacity-20 pointer-events-none">
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full border-[40px] border-orange-500/30"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/20 text-orange-400 font-semibold text-sm mb-6 border border-orange-500/30">
+                <Smartphone className="w-4 h-4" /> New Mobile Service
+              </div>
+              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
+                Internet That <span className="text-orange-500">Moves</span> With You
+              </h2>
+              <p className="text-xl text-blue-100 mb-8 font-light leading-relaxed">
+                Not at home? No problem. Our new Device and Voucher Plans keep you connected across multiple hotspots from Umiray to Matawe. 
+              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center gap-3 text-blue-50">
+                  <CheckCircle2 className="w-6 h-6 text-orange-400 shrink-0" />
+                  <span>Up to 15KM of coverage area</span>
+                </li>
+                <li className="flex items-center gap-3 text-blue-50">
+                  <CheckCircle2 className="w-6 h-6 text-orange-400 shrink-0" />
+                  <span>No monthly bills — pay only when needed</span>
+                </li>
+                <li className="flex items-center gap-3 text-blue-50">
+                  <CheckCircle2 className="w-6 h-6 text-orange-400 shrink-0" />
+                  <span>Plans starting at just ₱5</span>
+                </li>
+              </ul>
+              <Link to="/device-plan" className="inline-flex items-center justify-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-500 transition-colors shadow-lg shadow-orange-600/20">
+                Explore Device Plans <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+            <div className="lg:w-1/2 w-full">
+              <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <div className="text-3xl font-black text-white mb-1">15<span className="text-orange-500 text-xl">KM</span></div>
+                    <div className="text-sm text-blue-200">Network Coverage</div>
+                  </div>
+                  <div className="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <div className="text-3xl font-black text-white mb-1">11+</div>
+                    <div className="text-sm text-blue-200">Voucher Options</div>
+                  </div>
+                  <div className="bg-white/5 p-6 rounded-2xl border border-white/10 text-center col-span-2 flex items-center justify-center gap-4">
+                    <MapPin className="w-6 h-6 text-orange-400" />
+                    <span className="text-lg font-bold text-white">Umiray to Matawe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
