@@ -90,7 +90,7 @@ export default function HomePlan() {
               <div className="text-2xl font-semibold text-orange-600 mb-6 pb-6 border-b border-slate-100">
                 25Mbps <span className="text-lg text-slate-500 font-normal">/ month</span>
               </div>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-6">
                 <li className="flex items-center gap-3 text-slate-600">
                   <Wifi className="w-6 h-6 text-slate-400" />
                   <span className="text-lg">Up to 5 devices</span>
@@ -100,6 +100,10 @@ export default function HomePlan() {
                   <span className="text-lg">Unlimited Data</span>
                 </li>
               </ul>
+              <div className="mb-8 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Best For</p>
+                <p className="text-sm text-slate-700 font-medium">Small families, basic browsing, social media, and casual HD streaming.</p>
+              </div>
               <a href="https://m.me/1601970210083675" target="_blank" rel="noopener noreferrer" className="block text-center w-full py-4 rounded-xl bg-blue-50 text-blue-700 font-bold hover:bg-orange-600 hover:text-white active:bg-orange-700 active:scale-[0.98] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
                 Apply Now
               </a>
@@ -114,7 +118,7 @@ export default function HomePlan() {
               <div className="text-2xl font-semibold text-orange-600 mb-6 pb-6 border-b border-slate-100">
                 35Mbps <span className="text-lg text-slate-500 font-normal">/ month</span>
               </div>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-6">
                 <li className="flex items-center gap-3 text-slate-600">
                   <Wifi className="w-6 h-6 text-slate-400" />
                   <span className="text-lg">Up to 7 devices</span>
@@ -124,6 +128,10 @@ export default function HomePlan() {
                   <span className="text-lg">Unlimited Data</span>
                 </li>
               </ul>
+              <div className="mb-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">Best For</p>
+                <p className="text-sm text-blue-900 font-medium">Online classes, standard work from home, multiple HD streams, and casual gaming.</p>
+              </div>
               <a href="https://m.me/1601970210083675" target="_blank" rel="noopener noreferrer" className="block text-center w-full py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-orange-500 hover:shadow-orange-500/50 active:bg-orange-600 active:scale-[0.98] active:shadow-none transition-all duration-300 shadow-lg shadow-blue-600/30 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
                 Apply Now
               </a>
@@ -136,7 +144,7 @@ export default function HomePlan() {
               <div className="text-2xl font-semibold text-orange-600 mb-6 pb-6 border-b border-slate-100">
                 75 Mbps <span className="text-lg text-slate-500 font-normal">/ month</span>
               </div>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-6">
                 <li className="flex items-center gap-3 text-slate-600">
                   <Wifi className="w-6 h-6 text-slate-400" />
                   <span className="text-lg">Up to 10 devices</span>
@@ -146,6 +154,10 @@ export default function HomePlan() {
                   <span className="text-lg">Unlimited Data</span>
                 </li>
               </ul>
+              <div className="mb-8 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Best For</p>
+                <p className="text-sm text-slate-700 font-medium">Heavy users, 4K streaming, competitive gaming, multiple WFH setups, and small businesses.</p>
+              </div>
               <a href="https://m.me/1601970210083675" target="_blank" rel="noopener noreferrer" className="block text-center w-full py-4 rounded-xl bg-blue-50 text-blue-700 font-bold hover:bg-orange-600 hover:text-white active:bg-orange-700 active:scale-[0.98] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
                 Apply Now
               </a>
