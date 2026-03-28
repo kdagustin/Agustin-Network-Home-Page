@@ -29,6 +29,9 @@ export default function Layout() {
               <Link to="/" className="text-sm font-semibold text-slate-600 hover:text-orange-600 transition-colors">
                 Home
               </Link>
+              <Link to="/home-plan" className="text-sm font-semibold text-slate-600 hover:text-orange-600 transition-colors">
+                Home Plan
+              </Link>
               <Link to="/device-plan" className="text-sm font-semibold text-slate-600 hover:text-orange-600 transition-colors">
                 Device Plan
               </Link>
@@ -76,6 +79,13 @@ export default function Layout() {
                   className="block w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200"
                 >
                   Home
+                </Link>
+                <Link
+                  to="/home-plan"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200"
+                >
+                  Home Plan
                 </Link>
                 <Link
                   to="/device-plan"

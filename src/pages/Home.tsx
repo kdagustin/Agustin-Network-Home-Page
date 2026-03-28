@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Wifi, CheckCircle2, ArrowRight, Activity, X, Wrench, Zap, Users, ShieldCheck, PhoneCall, MapPin, MessageSquare, Smartphone } from 'lucide-react';
+import { Wifi, CheckCircle2, ArrowRight, Activity, X, Wrench, Zap, Users, ShieldCheck, PhoneCall, MapPin, MessageSquare, Smartphone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -182,6 +182,76 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Home Plan vs Device Plan Comparison */}
+      <section className="py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-blue-900 tracking-tight mb-6">
+              Why Choose Device Plans
+            </h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
+              See how our mobile Device Plan stacks up against traditional home internet.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Home Plan Card (Muted) */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm opacity-90">
+              <h3 className="text-2xl font-bold text-slate-500 mb-2">Traditional Home Plan</h3>
+              <p className="text-slate-400 mb-8 pb-6 border-b border-slate-100">Good for stationary household use.</p>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-3 text-slate-500">
+                  <MapPin className="w-6 h-6 text-slate-300 shrink-0" />
+                  <span><strong>Fixed Location:</strong> Only works inside your house.</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-500">
+                  <Users className="w-6 h-6 text-slate-300 shrink-0" />
+                  <span><strong>Shared Speed:</strong> Bandwidth is divided among everyone at home.</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-500">
+                  <Clock className="w-6 h-6 text-slate-300 shrink-0" />
+                  <span><strong>Monthly Bills:</strong> Fixed monthly payment regardless of usage.</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-500">
+                  <Wrench className="w-6 h-6 text-slate-300 shrink-0" />
+                  <span><strong>Setup Time:</strong> Requires scheduling and physical installation.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Device Plan Card (Highlighted) */}
+            <div className="bg-blue-900 p-8 rounded-3xl border-2 border-orange-500 shadow-2xl shadow-blue-900/20 text-white relative transform md:-translate-y-4">
+              <div className="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
+                Highly Recommended
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">Device / Voucher Plan</h3>
+              <p className="text-blue-200 mb-8 pb-6 border-b border-blue-800">The ultimate freedom and premium performance.</p>
+              <ul className="space-y-5 mb-8">
+                <li className="flex items-start gap-3 text-blue-50">
+                  <MapPin className="w-6 h-6 text-orange-400 shrink-0" />
+                  <span><strong>Connect Anywhere:</strong> Access internet across hundreds of hotspot locations from Umiray to Matawe.</span>
+                </li>
+                <li className="flex items-start gap-3 text-blue-50">
+                  <Zap className="w-6 h-6 text-orange-400 shrink-0" />
+                  <span><strong>Dedicated Premium Bandwidth:</strong> Your speed is 100% yours. No sharing, no slowdowns.</span>
+                </li>
+                <li className="flex items-start gap-3 text-blue-50">
+                  <ShieldCheck className="w-6 h-6 text-orange-400 shrink-0" />
+                  <span><strong>Total Flexibility:</strong> No monthly bills. Pay only for what you need, when you need it.</span>
+                </li>
+                <li className="flex items-start gap-3 text-blue-50">
+                  <Activity className="w-6 h-6 text-orange-400 shrink-0" />
+                  <span><strong>Instant Access:</strong> Zero installation. Just buy a voucher and connect instantly.</span>
+                </li>
+              </ul>
+              <Link to="/device-plan" className="block text-center w-full py-4 rounded-xl bg-orange-500 text-white font-bold hover:bg-orange-600 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-orange-500/30">
+                Get Your Device Plan
+              </Link>
             </div>
           </div>
         </div>
