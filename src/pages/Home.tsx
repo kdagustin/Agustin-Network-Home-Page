@@ -44,7 +44,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 tracking-tight mb-4">
-              Monthly / Home Internet Plans
+              Business / Home Internet Plans
             </h2>
             <p className="text-2xl text-slate-600 font-light">
               Starting at <strong className="font-bold text-slate-800">P999</strong> per month, subject to Fair Use Policy.

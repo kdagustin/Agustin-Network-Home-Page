@@ -167,7 +167,7 @@ export default function Terms() {
             </div>
 
             <div>
-              <h4 className="text-lg font-bold text-slate-800 mb-3">2.2 Monthly / Home Internet Plans</h4>
+              <h4 className="text-lg font-bold text-slate-800 mb-3">2.2 Business / Home Internet Plans</h4>
               <p className="mb-4 text-slate-600">Monthly plans are intended for <strong>continuous and regular use</strong>, subject to Fair Use Policy:</p>
               
               <div className="grid sm:grid-cols-3 gap-4 mb-6">
