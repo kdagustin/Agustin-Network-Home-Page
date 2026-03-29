@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Wifi, CheckCircle2, ArrowRight, Activity, X, Wrench, Zap, Users, ShieldCheck, PhoneCall, MapPin, MessageSquare, Smartphone, Clock } from 'lucide-react';
+import { Wifi, CheckCircle2, ArrowRight, Activity, X, Wrench, Zap, Users, ShieldCheck, PhoneCall, MapPin, MessageSquare, Smartphone, Clock, Server, Globe, Cpu, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -111,7 +111,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 w-full h-2 bg-blue-400 group-hover:bg-orange-500 transition-colors"></div>
               <h3 className="text-3xl font-bold text-slate-900 mb-2">Plan P1499</h3>
               <div className="text-2xl font-semibold text-orange-600 mb-6 pb-6 border-b border-slate-100">
-                75 Mbps <span className="text-lg text-slate-500 font-normal">/ month</span>
+                65 Mbps <span className="text-lg text-slate-500 font-normal">/ month</span>
               </div>
               <ul className="space-y-4 mb-6">
                 <li className="flex items-center gap-3 text-slate-600">
@@ -138,6 +138,63 @@ export default function Home() {
             <p className="text-slate-600 text-lg">
               The Provider reserves the right to manage bandwidth allocation to maintain network stability.
             </p>
+          </div>
+
+          {/* The Premium Difference Section */}
+          <div className="mt-20 bg-blue-950 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
+            
+            <div className="relative z-10">
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <h3 className="text-3xl md:text-4xl font-extrabold mb-4">The Agustin Network Difference: Built for Reliability</h3>
+                <p className="text-blue-200 text-lg">
+                  When choosing an internet plan, stability is just as important as speed. A <strong className="text-white">dedicated 35 Mbps / P1,199 connection often provides a smoother, more reliable experience than a shared 100 Mbps / P1,199 line offered by other competitors.</strong> Here’s what makes our service a great investment for your home—because bigger numbers don’t always mean faster or better performance.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center shrink-0">
+                    <Server className="w-6 h-6 text-orange-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Dedicated Enterprise Backbone</h4>
+                    <p className="text-blue-200 text-sm leading-relaxed">While others may use shared residential lines where speeds can drop during busy hours, we provide a dedicated enterprise backbone. This means your bandwidth is reserved just for you, 24/7.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0">
+                    <Globe className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Singapore-Optimized Routing</h4>
+                    <p className="text-blue-200 text-sm leading-relaxed">We use Singapore-based Enterprise ISP infrastructure to deliver a premium-quality, reliable internet experience. This ensures ultra-low latency (ping) for smooth gaming (MLBB, Valorant) and crystal-clear, lag-free video calls—giving you a faster, more stable connection you can rely on anytime.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center shrink-0">
+                    <Cpu className="w-6 h-6 text-emerald-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Carrier-Grade Equipment</h4>
+                    <p className="text-blue-200 text-sm leading-relaxed">We invest in premium, enterprise-grade hardware built to handle heavy, continuous usage. This provides a highly stable connection without the need for frequent router restarts.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center shrink-0">
+                    <TrendingUp className="w-6 h-6 text-purple-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Consistent Peak-Hour Speeds</h4>
+                    <p className="text-blue-200 text-sm leading-relaxed">Internet traffic often peaks in the evening, causing slowdowns on standard networks. Because our infrastructure is carefully managed, your speeds remain consistent and reliable, even during the busiest hours of the day.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
